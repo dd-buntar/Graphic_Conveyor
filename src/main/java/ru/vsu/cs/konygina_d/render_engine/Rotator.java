@@ -62,7 +62,7 @@ public class Rotator implements AffineTransformation {
         return prod(m, v);
     }
 
-    private static Matrix4f matrix3ftoMatrix4f (Matrix3f m) {
+    private static Matrix4f matrix3ftoMatrix4f(Matrix3f m) {
         return new Matrix4f(
                 m.m00, m.m01, m.m02, 0,
                 m.m10, m.m11, m.m12, 0,

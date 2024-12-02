@@ -1,7 +1,7 @@
 package ru.vsu.cs.konygina_d.obj_writer;
 
-import ru.vsu.cs.konygina_d.math.Vector2f;
-import ru.vsu.cs.konygina_d.math.Vector3f;
+import javax.vecmath.*;
+
 import ru.vsu.cs.konygina_d.model.Model;
 import ru.vsu.cs.konygina_d.model.Polygon;
 

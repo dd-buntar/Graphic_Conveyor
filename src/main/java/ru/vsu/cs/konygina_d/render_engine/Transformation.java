@@ -3,7 +3,7 @@ package ru.vsu.cs.konygina_d.render_engine;
 import javax.vecmath.Matrix4f;
 import javax.vecmath.Vector4f;
 
-public class Transformation implements AffineTransformation{
+public class Transformation implements AffineTransformation {
     private static final AffineTransformation defaultScale = new Scaling();
     private static final AffineTransformation defaultRotate = new Rotator();
     private static final AffineTransformation defaultTranslate = new Translator();
@@ -11,7 +11,7 @@ public class Transformation implements AffineTransformation{
 
     private final AffineTransformation scale, rotation, translation;
 
-    public Transformation(AffineTransformation scale, AffineTransformation rotation, AffineTransformation translation) {
+    public Transformation(Scaling scale, Rotator rotation, Translator translation) {
         this.scale = scale;
         this.rotation = rotation;
         this.translation = translation;
@@ -35,7 +35,7 @@ public class Transformation implements AffineTransformation{
         this.translation = translation;
     }
 
-    public Transformation(){
+    public Transformation() {
         this.scale = defaultScale;
         this.rotation = defaultRotate;
         this.translation = defaultTranslate;
