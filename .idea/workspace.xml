@@ -4,15 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment="" />
+    <list default="true" id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/AffineTransformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Rotator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Scaling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Transformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Translator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/MatrixTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/TranslateRotateScaleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/GraphicConveyor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/GraphicConveyor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2pKcrU45ii8PZGupow9u4Vaw9FC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -22,9 +47,71 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Graphic_Conveyor"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Graphic_Conveyor\src\main\java\ru\vsu\cs\konygina_d" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MatrixTest">
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graphic_Conveyor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
+      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatrixTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graphic_Conveyor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
+      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.MatrixTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TranslateRotateScaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graphic_Conveyor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
+      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.TranslateRotateScaleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MatrixTest" />
+        <item itemvalue="JUnit.TranslateRotateScaleTest" />
+        <item itemvalue="JUnit.AppTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
