@@ -4,41 +4,51 @@ import javax.vecmath.Matrix4f;
 import javax.vecmath.Vector4f;
 
 public class Transformation implements AffineTransformation {
-    private static final AffineTransformation defaultScale = new Scaling();
-    private static final AffineTransformation defaultRotate = new Rotator();
-    private static final AffineTransformation defaultTranslate = new Translator();
-
-
     private final AffineTransformation scale, rotation, translation;
+    private boolean isDefault;
 
     public Transformation(Scaling scale, Rotator rotation, Translator translation) {
         this.scale = scale;
         this.rotation = rotation;
         this.translation = translation;
+        isDefault = false;
     }
 
     public Transformation(Scaling scale) {
         this.scale = scale;
-        this.rotation = defaultRotate;
-        this.translation = defaultTranslate;
+        this.rotation = new Rotator();
+        this.translation = new Translator();
+        isDefault = false;
     }
 
     public Transformation(Rotator rotation) {
-        this.scale = defaultScale;
+        this.scale = new Scaling();
         this.rotation = rotation;
-        this.translation = defaultTranslate;
+        this.translation = new Translator();
+        isDefault = false;
     }
 
     public Transformation(Translator translation) {
-        this.scale = defaultScale;
-        this.rotation = defaultRotate;
+        this.scale = new Scaling();
+        this.rotation = new Rotator();
         this.translation = translation;
+        isDefault = false;
     }
 
     public Transformation() {
-        this.scale = defaultScale;
-        this.rotation = defaultRotate;
-        this.translation = defaultTranslate;
+        this.scale = new Scaling();
+        this.rotation = new Rotator();
+        this.translation = new Translator();
+        isDefault = true;
+    }
+
+    @Override
+    public boolean isDefault() {
+        return isDefault;
+    }
+
+    public void setDefault(boolean aDefault) {
+        isDefault = aDefault;
     }
 
     @Override
@@ -50,15 +60,19 @@ public class Transformation implements AffineTransformation {
                 0, 0, 0, 1
         );
 
-        if (!translation.equals(defaultTranslate)) {
+        if (isDefault()) {
+            return result;
+        }
+
+        if (!translation.isDefault()) {
             result.mul(translation.getMatrix());
         }
 
-        if (!rotation.equals(defaultRotate)) {
+        if (!rotation.isDefault()) {
             result.mul(rotation.getMatrix());
         }
 
-        if (!scale.equals(defaultScale)) {
+        if (!scale.isDefault()) {
             result.mul(scale.getMatrix());
         }
 

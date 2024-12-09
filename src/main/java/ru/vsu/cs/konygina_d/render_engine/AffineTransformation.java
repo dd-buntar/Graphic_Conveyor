@@ -6,4 +6,5 @@ public interface AffineTransformation {
     Matrix4f getMatrix();
 
     Vector4f transform(Vector4f v);
+    boolean isDefault();
 }

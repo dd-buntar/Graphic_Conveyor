@@ -5,19 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/models/myTransCube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/models/simpleCube.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/models/simpleCube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/models/transCube.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/models/transCube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/myOnlyRCube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyRotatedCube.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyRotatedCube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeXYZ.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeXYZ.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeZXY.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeZXY.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeZYX.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeZYX.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyScaledCube.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyScaledCube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyXRotated.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyXRotated.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyYRotated.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyYRotated.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyZRotated.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/onlyZRotated.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_reader/ObjReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_reader/ObjReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_writer/ObjWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_writer/ObjWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/AffineTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/AffineTransformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/GraphicConveyor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/GraphicConveyor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Rotator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Rotator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Transformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Transformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/myTransCube.obj" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/models/myTransCube.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/simpleCube.mtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/models/simpleCube.mtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/simpleCube.obj" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/models/simpleCube.obj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,16 +57,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Graphic_Conveyor"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Graphic_Conveyor&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Graphic_Conveyor\src\main\java\ru\vsu\cs\konygina_d" />
@@ -139,6 +154,20 @@
       <updated>1732518408994</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.obj" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

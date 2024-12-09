@@ -24,11 +24,19 @@ public class GraphicConveyor {
         }
         Model mesh = ObjReader.read(fileContent);
 
-        AffineTransformation transformation = new Transformation(
-                new Scaling(-1.920F, 1.590F, 0.640F),
-                new Rotator(45, -45, -45),
+       /* AffineTransformation transformation = new Transformation(
+                new Scaling(1.920F, 1.590F, 0.640F),
+                new Rotator(45, 45, 45),
                 new Translator(3, -2, 0)
+        );*/
+
+        AffineTransformation transformation = new Transformation(
+                new Rotator(0, 0, 60)
         );
+
+        /*AffineTransformation transformation = new Transformation(
+                new Scaling(3.5F, 2, 0.5F)
+        );*/
 
         List<Vector4f> vertexList = new ArrayList<>();
         for (Vector3f v : mesh.vertices) {
@@ -46,7 +54,7 @@ public class GraphicConveyor {
         }
 
         ObjWriter objWriter = new ObjWriter();
-        objWriter.write(mesh, "D:\\Graphic_Conveyor\\src\\test\\models\\myTransCube.obj");
+        objWriter.write(mesh, "D:\\Graphic_Conveyor\\src\\test\\models\\myOnlyRCube.obj");
     }
 
 }

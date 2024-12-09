@@ -7,23 +7,36 @@ import java.util.Objects;
 
 public class Rotator implements AffineTransformation {
     private final float alpha, beta, gamma;
+    private boolean isDefault;
 
     public Rotator(int alpha, int beta, int gamma) {
         this.alpha = (float) Math.toRadians(alpha);
         this.beta = (float) Math.toRadians(beta);
         this.gamma = (float) Math.toRadians(gamma);
+        isDefault = false;
     }
 
     public Rotator() {
         this.alpha = 0;
         this.beta = 0;
         this.gamma = 0;
+        isDefault = true;
     }
 
     public Rotator(float alpha, float beta, float gamma) {
         this.alpha = alpha;
         this.beta = beta;
         this.gamma = gamma;
+        isDefault = false;
+    }
+
+    @Override
+    public boolean isDefault() {
+        return isDefault;
+    }
+
+    public void setDefault(boolean aDefault) {
+        isDefault = aDefault;
     }
 
     @Override
@@ -37,17 +50,17 @@ public class Rotator implements AffineTransformation {
 
         Matrix3f xRotateMatrix = new Matrix3f(
                 1, 0, 0,
-                0, cosA, sinA,
-                0, -sinA, cosA);
+                0, cosA, -sinA,
+                0, sinA, cosA);
 
         Matrix3f yRotateMatrix = new Matrix3f(
-                cosB, 0, sinB,
+                cosB, 0, -sinB,
                 0, 1, 0,
-                -sinB, 0, cosB);
+                sinB, 0, cosB);
 
         Matrix3f zRotateMatrix = new Matrix3f(
-                cosG, sinG, 0,
-                -sinG, cosG, 0,
+                cosG, -sinG, 0,
+                sinG, cosG, 0,
                 0, 0, 1);
 
         zRotateMatrix.mul(yRotateMatrix);
