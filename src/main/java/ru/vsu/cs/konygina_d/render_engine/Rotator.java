@@ -1,8 +1,9 @@
 package ru.vsu.cs.konygina_d.render_engine;
 
-import javax.vecmath.Matrix3f;
-import javax.vecmath.Matrix4f;
-import javax.vecmath.Vector4f;
+import ru.vsu.cs.konygina_d.math.MatMath;
+import ru.vsu.cs.konygina_d.math.VectorConverter;
+
+import javax.vecmath.*;
 import java.util.Objects;
 
 public class Rotator implements AffineTransformation {
@@ -70,9 +71,9 @@ public class Rotator implements AffineTransformation {
     }
 
     @Override
-    public Vector4f transform(Vector4f v) {
-        Matrix4f m = getMatrix();
-        return prod(m, v);
+    public Vector3f transform(Vector3f v) {
+        Vector4f resVertex = MatMath.prod(getMatrix(), VectorConverter.to4f(v));
+        return VectorConverter.to3f(resVertex);
     }
 
     private static Matrix4f matrix3ftoMatrix4f(Matrix3f m) {
@@ -81,22 +82,6 @@ public class Rotator implements AffineTransformation {
                 m.m10, m.m11, m.m12, 0,
                 m.m20, m.m21, m.m22, 0,
                 0, 0, 0, 1);
-    }
-
-    public static Vector4f prod(final Matrix4f m, final Vector4f v) {
-
-        float[] result = new float[]{1, 1, 1, 1};
-        for (int i = 0; i < 4; i++) {
-            float value = 0;
-            value += m.getElement(i, 0) * v.x;
-            value += m.getElement(i, 1) * v.y;
-            value += m.getElement(i, 2) * v.z;
-            value += m.getElement(i, 3) * v.w;
-
-            result[i] = value;
-        }
-
-        return new Vector4f(result[0], result[1], result[2], result[3]);
     }
 
     @Override

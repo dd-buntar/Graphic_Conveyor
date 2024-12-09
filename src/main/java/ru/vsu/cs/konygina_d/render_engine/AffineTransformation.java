@@ -5,6 +5,7 @@ import javax.vecmath.*;
 public interface AffineTransformation {
     Matrix4f getMatrix();
 
-    Vector4f transform(Vector4f v);
+    Vector3f transform(Vector3f v);
+
     boolean isDefault();
 }

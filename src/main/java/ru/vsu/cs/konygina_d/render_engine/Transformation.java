@@ -1,7 +1,9 @@
 package ru.vsu.cs.konygina_d.render_engine;
 
-import javax.vecmath.Matrix4f;
-import javax.vecmath.Vector4f;
+import ru.vsu.cs.konygina_d.math.MatMath;
+import ru.vsu.cs.konygina_d.math.VectorConverter;
+
+import javax.vecmath.*;
 
 public class Transformation implements AffineTransformation {
     private final AffineTransformation scale, rotation, translation;
@@ -80,7 +82,8 @@ public class Transformation implements AffineTransformation {
     }
 
     @Override
-    public Vector4f transform(Vector4f v) {
-        return Rotator.prod(getMatrix(), v);
+    public Vector3f transform(Vector3f v) {
+        Vector4f resVertex = MatMath.prod(getMatrix(), VectorConverter.to4f(v));
+        return VectorConverter.to3f(resVertex);
     }
 }

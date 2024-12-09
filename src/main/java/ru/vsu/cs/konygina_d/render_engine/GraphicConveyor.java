@@ -31,26 +31,15 @@ public class GraphicConveyor {
         );*/
 
         AffineTransformation transformation = new Transformation(
-                new Rotator(0, 0, 60)
+                new Rotator(0, 0, -60)
         );
 
         /*AffineTransformation transformation = new Transformation(
                 new Scaling(3.5F, 2, 0.5F)
         );*/
 
-        List<Vector4f> vertexList = new ArrayList<>();
-        for (Vector3f v : mesh.vertices) {
-            vertexList.add(new Vector4f(v.x, v.y, v.z, 1));
-        }
-
-        List<Vector4f> transformedVertices = new ArrayList<>();
-        for (Vector4f v : vertexList) {
-            transformedVertices.add(transformation.transform(v));
-        }
-
-        mesh.vertices.clear();
-        for (Vector4f v : transformedVertices) {
-            mesh.vertices.add(new Vector3f(v.x, v.y, v.z));
+        for (int i = 0; i < mesh.vertices.size(); i++) {
+            mesh.vertices.set(i, transformation.transform(mesh.vertices.get(i)));
         }
 
         ObjWriter objWriter = new ObjWriter();

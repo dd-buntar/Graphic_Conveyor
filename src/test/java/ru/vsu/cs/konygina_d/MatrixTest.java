@@ -26,8 +26,8 @@ public class MatrixTest {
     public void testRotateMatrix() {
         Matrix4f expectedMatrix = new Matrix4f(
                 0, 0, 1, 0,
-                0, 1, 0, 0,
-                -1, 0, 0, 0,
+                0, -1, 0, 0,
+                1, 0, 0, 0,
                 0, 0, 0, 1);
 
         Rotator r = new Rotator(90, 90, 90);

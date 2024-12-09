@@ -40,12 +40,11 @@ public class Scaling implements AffineTransformation {
     }
 
     @Override
-    public Vector4f transform(Vector4f v) {
-        return new Vector4f(
+    public Vector3f transform(Vector3f v) {
+        return new Vector3f(
                 Sx * v.x,
                 Sy * v.y,
-                Sz * v.z,
-                v.w);
+                Sz * v.z);
     }
 
     @Override

@@ -40,12 +40,11 @@ public class Translator implements AffineTransformation {
     }
 
     @Override
-    public Vector4f transform(Vector4f v) {
-        return new Vector4f(
+    public Vector3f transform(Vector3f v) {
+        return new Vector3f(
                 Tx + v.x,
                 Ty + v.y,
-                Tz + v.z,
-                v.w);
+                Tz + v.z);
     }
 
     @Override
