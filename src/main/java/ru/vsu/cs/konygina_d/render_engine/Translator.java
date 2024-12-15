@@ -5,29 +5,17 @@ import java.util.Objects;
 
 public class Translator implements AffineTransformation {
     private final float Tx, Ty, Tz;
-    private boolean isDefault;
 
     public Translator(float tx, float ty, float tz) {
         Tx = tx;
         Ty = ty;
         Tz = tz;
-        isDefault = false;
     }
 
     public Translator() {
         Tx = 0;
         Ty = 0;
         Tz = 0;
-        isDefault = true;
-    }
-
-    @Override
-    public boolean isDefault() {
-        return isDefault;
-    }
-
-    public void setDefault(boolean aDefault) {
-        isDefault = aDefault;
     }
 
     @Override

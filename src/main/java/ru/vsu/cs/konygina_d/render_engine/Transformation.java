@@ -4,54 +4,19 @@ import ru.vsu.cs.konygina_d.math.MatMath;
 import ru.vsu.cs.konygina_d.math.VectorConverter;
 
 import javax.vecmath.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Transformation implements AffineTransformation {
-    private final AffineTransformation scale, rotation, translation;
-    private boolean isDefault;
+    private final List<AffineTransformation> affineTransformations = new ArrayList<>();
 
-    public Transformation(Scaling scale, Rotator rotation, Translator translation) {
-        this.scale = scale;
-        this.rotation = rotation;
-        this.translation = translation;
-        isDefault = false;
+    public Transformation(AffineTransformation... ats) {
+        for (AffineTransformation at : ats) {
+            affineTransformations.add(at);
+        }
     }
 
-    public Transformation(Scaling scale) {
-        this.scale = scale;
-        this.rotation = new Rotator();
-        this.translation = new Translator();
-        isDefault = false;
-    }
-
-    public Transformation(Rotator rotation) {
-        this.scale = new Scaling();
-        this.rotation = rotation;
-        this.translation = new Translator();
-        isDefault = false;
-    }
-
-    public Transformation(Translator translation) {
-        this.scale = new Scaling();
-        this.rotation = new Rotator();
-        this.translation = translation;
-        isDefault = false;
-    }
-
-    public Transformation() {
-        this.scale = new Scaling();
-        this.rotation = new Rotator();
-        this.translation = new Translator();
-        isDefault = true;
-    }
-
-    @Override
-    public boolean isDefault() {
-        return isDefault;
-    }
-
-    public void setDefault(boolean aDefault) {
-        isDefault = aDefault;
-    }
+    public Transformation() { }
 
     @Override
     public Matrix4f getMatrix() {
@@ -62,20 +27,8 @@ public class Transformation implements AffineTransformation {
                 0, 0, 0, 1
         );
 
-        if (isDefault()) {
-            return result;
-        }
-
-        if (!translation.isDefault()) {
-            result.mul(translation.getMatrix());
-        }
-
-        if (!rotation.isDefault()) {
-            result.mul(rotation.getMatrix());
-        }
-
-        if (!scale.isDefault()) {
-            result.mul(scale.getMatrix());
+        for (AffineTransformation at : affineTransformations) {
+            result.mul(at.getMatrix());
         }
 
         return result;

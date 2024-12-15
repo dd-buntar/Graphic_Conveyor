@@ -5,29 +5,17 @@ import java.util.Objects;
 
 public class Scaling implements AffineTransformation {
     private final float Sx, Sy, Sz;
-    private boolean isDefault;
 
     public Scaling(float sx, float sy, float sz) {
         Sx = sx;
         Sy = sy;
         Sz = sz;
-        isDefault = false;
     }
 
     public Scaling() {
         Sx = 1;
         Sy = 1;
         Sz = 1;
-        isDefault = true;
-    }
-
-    @Override
-    public boolean isDefault() {
-        return isDefault;
-    }
-
-    public void setDefault(boolean aDefault) {
-        isDefault = aDefault;
     }
 
     @Override

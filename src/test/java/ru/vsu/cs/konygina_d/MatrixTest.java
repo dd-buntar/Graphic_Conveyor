@@ -2,9 +2,7 @@ package ru.vsu.cs.konygina_d;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.vsu.cs.konygina_d.render_engine.Rotator;
-import ru.vsu.cs.konygina_d.render_engine.Scaling;
-import ru.vsu.cs.konygina_d.render_engine.Translator;
+import ru.vsu.cs.konygina_d.render_engine.*;
 
 import javax.vecmath.Matrix4f;
 
@@ -30,8 +28,12 @@ public class MatrixTest {
                 1, 0, 0, 0,
                 0, 0, 0, 1);
 
-        Rotator r = new Rotator(90, 90, 90);
-        Assertions.assertTrue(expectedMatrix.epsilonEquals(r.getMatrix(), 0.00001F));
+        AffineTransformation affineTransformation = new Transformation(
+                new Rotator(90, Rotator.Axis.X),
+                new Rotator(90, Rotator.Axis.Y),
+                new Rotator(90, Rotator.Axis.Z)
+        );
+        Assertions.assertTrue(expectedMatrix.epsilonEquals(affineTransformation.getMatrix(), 0.00001F));
     }
 
     @Test

@@ -31,7 +31,7 @@ public class GraphicConveyor {
         );*/
 
         AffineTransformation transformation = new Transformation(
-                new Rotator(0, 0, -60)
+                new Rotator(90, Rotator.Axis.X)
         );
 
         /*AffineTransformation transformation = new Transformation(
