@@ -1,9 +1,10 @@
 package ru.vsu.cs.konygina_d.render_engine;
 
-import javax.vecmath.*;
+import io.github.alphameo.linear_algebra.mat.Matrix4;
+import io.github.alphameo.linear_algebra.vec.Vector3;
 
 public interface AffineTransformation {
-    Matrix4f getMatrix();
+    Matrix4 getMatrix();
 
-    Vector3f transform(Vector3f v);
+    Vector3 transform(Vector3 v);
 }

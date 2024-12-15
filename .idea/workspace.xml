@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/models/XYZcube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/XZcube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/allTransfotmedCube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/cube.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/models/rotatedCube.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/math/MatMath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/math/Vector2f.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/math/Vector3f.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/math/VectorConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/model/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_reader/ObjReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_reader/ObjReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_writer/ObjWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_writer/ObjWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/AffineTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/AffineTransformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/GraphicConveyor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/GraphicConveyor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Rotator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Rotator.java" afterDir="false" />
@@ -14,7 +28,15 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Translator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/MatrixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/MatrixTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/TranslateRotateScaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/TranslateRotateScaleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/myOnlyRCube.obj" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/models/myOnlyRCube.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/myOnlyRCube.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/myTransCube.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeXYZ.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeZYX.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/onlyScaledCube.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/onlyXRotated.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/onlyYRotated.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/onlyZRotated.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/models/simpleCube.obj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +65,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Graphic_Conveyor&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "20",
+    "last_opened_file_path": "D:/Graphic_Conveyor",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Graphic_Conveyor\src\main\java\ru\vsu\cs\konygina_d" />
@@ -108,6 +131,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MatrixTest.testScaleMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graphic_Conveyor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
+      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.MatrixTest" />
+      <option name="METHOD_NAME" value="testScaleMatrix" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TranslateRotateScaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graphic_Conveyor" />
       <extension name="coverage">
@@ -123,29 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TranslateRotateScaleTest.testRotateTransform" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graphic_Conveyor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
-      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.TranslateRotateScaleTest" />
-      <option name="METHOD_NAME" value="testRotateTransform" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TranslateRotateScaleTest" />
         <item itemvalue="JUnit.MatrixTest" />
+        <item itemvalue="JUnit.MatrixTest.testScaleMatrix" />
         <item itemvalue="Application.GraphicConveyor" />
         <item itemvalue="JUnit.MatrixTest.testRotateMatrix" />
-        <item itemvalue="JUnit.TranslateRotateScaleTest.testRotateTransform" />
       </list>
     </recent_temporary>
   </component>

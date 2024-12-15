@@ -1,7 +1,7 @@
 package ru.vsu.cs.konygina_d.obj_writer;
 
-import javax.vecmath.*;
-
+import io.github.alphameo.linear_algebra.vec.Vector2;
+import io.github.alphameo.linear_algebra.vec.Vector3;
 import ru.vsu.cs.konygina_d.model.Model;
 import ru.vsu.cs.konygina_d.model.Polygon;
 
@@ -51,16 +51,16 @@ public class ObjWriter {
         return true;
     }
 
-    protected String vertexToString(Vector3f vector) {
-        return OBJ_VERTEX_TOKEN + " " + vector.getX() + " " + vector.getY() + " " + vector.getZ();
+    protected String vertexToString(Vector3 vector) {
+        return OBJ_VERTEX_TOKEN + " " + vector.x() + " " + vector.y() + " " + vector.z();
     }
 
-    protected String textureVertexToString(Vector2f vector) {
-        return OBJ_TEXTURE_TOKEN + " " + vector.getX() + " " + vector.getY();
+    protected String textureVertexToString(Vector2 vector) {
+        return OBJ_TEXTURE_TOKEN + " " + vector.x() + " " + vector.y();
     }
 
-    protected String normalToString(Vector3f vector) {
-        return OBJ_NORMAL_TOKEN + " " + vector.getX() + " " + vector.getY() + " " + vector.getZ();
+    protected String normalToString(Vector3 vector) {
+        return OBJ_NORMAL_TOKEN + " " + vector.x() + " " + vector.y() + " " + vector.z();
     }
 
     protected String polygonToString(Polygon polygon) {

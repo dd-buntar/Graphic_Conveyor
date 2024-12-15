@@ -1,7 +1,9 @@
 package ru.vsu.cs.konygina_d.obj_reader;
 
-import javax.vecmath.*;
-
+import io.github.alphameo.linear_algebra.vec.Vec2;
+import io.github.alphameo.linear_algebra.vec.Vec3;
+import io.github.alphameo.linear_algebra.vec.Vector2;
+import io.github.alphameo.linear_algebra.vec.Vector3;
 import ru.vsu.cs.konygina_d.model.Model;
 import ru.vsu.cs.konygina_d.model.Polygon;
 
@@ -56,9 +58,9 @@ public class ObjReader {
     }
 
     // Всем методам кроме основного я поставил модификатор доступа protected, чтобы обращаться к ним в тестах
-    protected static Vector3f parseVertex(final ArrayList<String> wordsInLineWithoutToken, int lineInd) {
+    protected static Vector3 parseVertex(final ArrayList<String> wordsInLineWithoutToken, int lineInd) {
         try {
-            return new Vector3f(
+            return new Vec3(
                     Float.parseFloat(wordsInLineWithoutToken.get(0)),
                     Float.parseFloat(wordsInLineWithoutToken.get(1)),
                     Float.parseFloat(wordsInLineWithoutToken.get(2)));
@@ -71,9 +73,9 @@ public class ObjReader {
         }
     }
 
-    protected static Vector2f parseTextureVertex(final ArrayList<String> wordsInLineWithoutToken, int lineInd) {
+    protected static Vector2 parseTextureVertex(final ArrayList<String> wordsInLineWithoutToken, int lineInd) {
         try {
-            return new Vector2f(
+            return new Vec2(
                     Float.parseFloat(wordsInLineWithoutToken.get(0)),
                     Float.parseFloat(wordsInLineWithoutToken.get(1)));
 
@@ -85,9 +87,9 @@ public class ObjReader {
         }
     }
 
-    protected static Vector3f parseNormal(final ArrayList<String> wordsInLineWithoutToken, int lineInd) {
+    protected static Vector3 parseNormal(final ArrayList<String> wordsInLineWithoutToken, int lineInd) {
         try {
-            return new Vector3f(
+            return new Vec3(
                     Float.parseFloat(wordsInLineWithoutToken.get(0)),
                     Float.parseFloat(wordsInLineWithoutToken.get(1)),
                     Float.parseFloat(wordsInLineWithoutToken.get(2)));

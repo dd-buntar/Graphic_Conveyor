@@ -1,6 +1,9 @@
 package ru.vsu.cs.konygina_d.render_engine;
 
-import javax.vecmath.*;
+import io.github.alphameo.linear_algebra.mat.Mat4;
+import io.github.alphameo.linear_algebra.mat.Matrix4;
+import io.github.alphameo.linear_algebra.vec.Vec3;
+import io.github.alphameo.linear_algebra.vec.Vector3;
 import java.util.Objects;
 
 public class Scaling implements AffineTransformation {
@@ -19,8 +22,8 @@ public class Scaling implements AffineTransformation {
     }
 
     @Override
-    public Matrix4f getMatrix() {
-        return new Matrix4f(
+    public Matrix4 getMatrix() {
+        return new Mat4(
                 Sx, 0, 0, 0,
                 0, Sy, 0, 0,
                 0, 0, Sz, 0,
@@ -28,11 +31,11 @@ public class Scaling implements AffineTransformation {
     }
 
     @Override
-    public Vector3f transform(Vector3f v) {
-        return new Vector3f(
-                Sx * v.x,
-                Sy * v.y,
-                Sz * v.z);
+    public Vector3 transform(Vector3 v) {
+        return new Vec3(
+                Sx * v.x(),
+                Sy * v.y(),
+                Sz * v.z());
     }
 
     @Override

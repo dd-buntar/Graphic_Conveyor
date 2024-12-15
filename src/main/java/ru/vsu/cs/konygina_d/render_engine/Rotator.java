@@ -1,9 +1,12 @@
 package ru.vsu.cs.konygina_d.render_engine;
 
-import ru.vsu.cs.konygina_d.math.MatMath;
-import ru.vsu.cs.konygina_d.math.VectorConverter;
-
-import javax.vecmath.*;
+import io.github.alphameo.linear_algebra.mat.Mat4;
+import io.github.alphameo.linear_algebra.mat.Mat4Math;
+import io.github.alphameo.linear_algebra.mat.Matrix4;
+import io.github.alphameo.linear_algebra.vec.Vec3;
+import io.github.alphameo.linear_algebra.vec.Vec3Math;
+import io.github.alphameo.linear_algebra.vec.Vector3;
+import io.github.alphameo.linear_algebra.vec.Vector4;
 import java.util.Objects;
 
 public class Rotator implements AffineTransformation {
@@ -25,56 +28,43 @@ public class Rotator implements AffineTransformation {
     }
 
     @Override
-    public Matrix4f getMatrix() {
+    public Matrix4 getMatrix() {
         float cosA = (float) Math.cos(angle);
         float sinA = (float) Math.sin(angle);
 
         switch (axis) {
             case X -> {
-                return new Matrix4f(
+                return new Mat4(
                         1, 0, 0, 0,
                         0, cosA, -sinA, 0,
                         0, sinA, cosA, 0,
                         0, 0, 0, 1);
             }
             case Y -> {
-                return new Matrix4f(
+                return new Mat4(
                         cosA, 0, sinA, 0,
                         0, 1, 0, 0,
                         -sinA, 0, cosA, 0,
                         0, 0, 0, 1);
             }
             case Z -> {
-                return new Matrix4f(
+                return new Mat4(
                         cosA, -sinA, 0, 0,
                         sinA, cosA, 0, 0,
                         0, 0, 1, 0,
                         0, 0, 0, 1);
             }
             default -> {
-                return new Matrix4f(
-                        1, 0, 0, 0,
-                        0, 1, 0, 0,
-                        0, 0, 1, 0,
-                        0, 0, 0, 1);
+                return Mat4Math.unitMat();
             }
         }
     }
 
     @Override
-    public Vector3f transform(Vector3f v) {
-        Vector4f resVertex = MatMath.prod(getMatrix(), VectorConverter.to4f(v));
-        return VectorConverter.to3f(resVertex);
+    public Vector3 transform(Vector3 v) {
+        Vector4 resVertex = Mat4Math.prod(getMatrix(), Vec3Math.toVec4(v));
+        return new Vec3(resVertex.x(), resVertex.y(), resVertex.z());
     }
-
-    private static Matrix4f matrix3ftoMatrix4f(Matrix3f m) {
-        return new Matrix4f(
-                m.m00, m.m01, m.m02, 0,
-                m.m10, m.m11, m.m12, 0,
-                m.m20, m.m21, m.m22, 0,
-                0, 0, 0, 1);
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
