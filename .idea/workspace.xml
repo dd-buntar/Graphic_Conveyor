@@ -5,38 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/models/XYZcube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/models/XZcube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/models/allTransfotmedCube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/models/cube.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/models/rotatedCube.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/math/MatMath.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/math/Vector2f.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/math/Vector3f.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/math/VectorConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/model/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/model/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_reader/ObjReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_reader/ObjReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_writer/ObjWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/obj_writer/ObjWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/AffineTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/AffineTransformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/GraphicConveyor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/GraphicConveyor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Rotator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Rotator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Scaling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Scaling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Transformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Transformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Translator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/MatrixTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/MatrixTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/TranslateRotateScaleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/TranslateRotateScaleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/myOnlyRCube.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/myTransCube.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeXYZ.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/onlyRotatedCubeZYX.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/onlyScaledCube.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/onlyXRotated.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/onlyYRotated.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/onlyZRotated.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/models/simpleCube.obj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
