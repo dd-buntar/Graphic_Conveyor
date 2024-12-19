@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/DataList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/AffineTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/AffineTransformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Rotator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Rotator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Transformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Transformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/vsu/cs/konygina_d/render_engine/Translator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/AppTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
