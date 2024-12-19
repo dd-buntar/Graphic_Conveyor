@@ -60,11 +60,7 @@ public class Rotator implements AffineTransformation {
         }
     }
 
-    @Override
-    public Vector3 transform(Vector3 v) {
-        Vector4 resVertex = Mat4Math.prod(getMatrix(), Vec3Math.toVec4(v));
-        return new Vec3(resVertex.x(), resVertex.y(), resVertex.z());
-    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

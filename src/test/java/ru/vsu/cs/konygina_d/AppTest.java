@@ -12,6 +12,7 @@ import ru.vsu.cs.konygina_d.render_engine.*;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 
 public class AppTest {
 
@@ -26,12 +27,6 @@ public class AppTest {
         }
         Model mesh = ObjReader.read(fileContent);
 
-       /* AffineTransformation transformation = new Transformation(
-                new Scaling(1.920F, 1.590F, 0.640F),
-                new Rotator(45, 45, 45),
-                new Translator(3, -2, 0)
-        );*/
-
         AffineTransformation transformation = new Transformation(
                 new Translator(5, 6.5f, -7),
                 new Rotator(-60, Rotator.Axis.Z),
@@ -44,9 +39,7 @@ public class AppTest {
                 new Scaling(3.5F, 2, 0.5F)
         );*/
 
-        for (int i = 0; i < mesh.vertices.size(); i++) {
-            mesh.vertices.set(i, transformation.transform(mesh.vertices.get(i)));
-        }
+        mesh.vertices = new ArrayList<>(transformation.transform(mesh.vertices));
 
         ObjWriter objWriter = new ObjWriter();
         objWriter.write(mesh, "D:\\Graphic_Conveyor\\src\\test\\models\\testCube.obj");

@@ -35,9 +35,9 @@ public class Translator implements AffineTransformation {
     @Override
     public Vector3 transform(Vector3 v) {
         return new Vec3(
-                translateMatrix.get(R3, C0) + v.x(),
-                translateMatrix.get(R3, C1) + v.y(),
-                translateMatrix.get(R3, C2) + v.z());
+                translateMatrix.get(R0, C3) + v.x(),
+                translateMatrix.get(R1, C3) + v.y(),
+                translateMatrix.get(R2, C3) + v.z());
     }
 
     @Override
