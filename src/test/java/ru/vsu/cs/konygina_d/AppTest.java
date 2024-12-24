@@ -1,7 +1,5 @@
 package ru.vsu.cs.konygina_d;
 
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import ru.vsu.cs.konygina_d.model.Model;
@@ -32,12 +30,7 @@ public class AppTest {
                 new Rotator(-60, Rotator.Axis.Z),
                 new Rotator(120, Rotator.Axis.Y),
                 new Rotator(20, Rotator.Axis.X),
-                new Scaling(1.5f, 6, 1)
-        );
-
-        /*AffineTransformation transformation = new Transformation(
-                new Scaling(3.5F, 2, 0.5F)
-        );*/
+                new Scaling(1.5f, 6, 1));
 
         mesh.vertices = new ArrayList<>(transformation.transform(mesh.vertices));
 

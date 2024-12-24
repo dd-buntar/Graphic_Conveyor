@@ -3,10 +3,6 @@ package ru.vsu.cs.konygina_d.render_engine;
 import io.github.alphameo.linear_algebra.mat.Mat4;
 import io.github.alphameo.linear_algebra.mat.Mat4Math;
 import io.github.alphameo.linear_algebra.mat.Matrix4;
-import io.github.alphameo.linear_algebra.vec.Vec3;
-import io.github.alphameo.linear_algebra.vec.Vec3Math;
-import io.github.alphameo.linear_algebra.vec.Vector3;
-import io.github.alphameo.linear_algebra.vec.Vector4;
 import java.util.Objects;
 
 public class Rotator implements AffineTransformation {
