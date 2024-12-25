@@ -43,14 +43,14 @@ public class Translator implements AffineTransformation {
                 translateMatrix.get(R2, C3) + v.z());
     }
 
-    public void translate(float newTX, float newTY, float newTZ) {
+    public void set(float newTX, float newTY, float newTZ) {
         translateMatrix.set(Matrix4Row.R0, Matrix4Col.C3, newTX);
         translateMatrix.set(Matrix4Row.R1, Matrix4Col.C3, newTY);
         translateMatrix.set(Matrix4Row.R2, Matrix4Col.C3, newTZ);
     }
 
-    public void translateRelative(float dTX, float dTY, float dTZ) {
-        translate(
+    public void setRelative(float dTX, float dTY, float dTZ) {
+        set(
                 translateMatrix.get(Matrix4Row.R0, Matrix4Col.C3) + dTX,
                 translateMatrix.get(Matrix4Row.R1, Matrix4Col.C3) + dTY,
                 translateMatrix.get(Matrix4Row.R2, Matrix4Col.C3) + dTZ);
