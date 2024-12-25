@@ -6,21 +6,24 @@ import io.github.alphameo.linear_algebra.mat.Matrix4;
 import java.util.Objects;
 
 public class Rotator implements AffineTransformation {
-    private final float angle;
-    private final Axis axis;
+    private float angle;
+    private Axis axis;
 
     public enum Axis {
         X, Y, Z;
     }
 
-    public Rotator(int dangle, Rotator.Axis axis) {
-        this.angle = (float) Math.toRadians(dangle);
-        this.axis = axis;
-    }
-
     public Rotator(float rangle, Rotator.Axis axis) {
         this.angle = rangle;
         this.axis = axis;
+    }
+
+    public Rotator(int dangle, Rotator.Axis axis) {
+        this((float) Math.toRadians(dangle), axis);
+    }
+
+    public Rotator(Rotator.Axis axis) {
+        this(0f, axis);
     }
 
     @Override
@@ -56,11 +59,32 @@ public class Rotator implements AffineTransformation {
         }
     }
 
+    public void setAxis(Axis newAxis) {
+        this.axis = newAxis;
+    }
+
+    public void setAngle(float newRAngle) {
+        this.angle = newRAngle;
+    }
+
+    public void setAngle(int newRAngle) {
+        this.angle = (float) Math.toRadians(newRAngle);
+    }
+
+    public void setRelative(float dRAngle) {
+        this.angle += dRAngle;
+    }
+
+    public void setRelative(int dRAngle) {
+        this.angle += (float) Math.toRadians(dRAngle);
+    }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Rotator rotator = (Rotator) o;
         return Float.compare(angle, rotator.angle) == 0 && axis == rotator.axis;
     }
@@ -70,4 +94,3 @@ public class Rotator implements AffineTransformation {
         return Objects.hash(angle, axis);
     }
 }
-

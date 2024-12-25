@@ -2,6 +2,9 @@ package ru.vsu.cs.konygina_d.render_engine;
 
 import io.github.alphameo.linear_algebra.mat.Mat4;
 import io.github.alphameo.linear_algebra.mat.Matrix4;
+import io.github.alphameo.linear_algebra.mat.Matrix4Col;
+import io.github.alphameo.linear_algebra.mat.Matrix4Row;
+
 import static io.github.alphameo.linear_algebra.mat.Matrix4Col.*;
 import static io.github.alphameo.linear_algebra.mat.Matrix4Row.*;
 import io.github.alphameo.linear_algebra.vec.Vec3;
@@ -40,10 +43,25 @@ public class Translator implements AffineTransformation {
                 translateMatrix.get(R2, C3) + v.z());
     }
 
+    public void translate(float newTX, float newTY, float newTZ) {
+        translateMatrix.set(Matrix4Row.R0, Matrix4Col.C3, newTX);
+        translateMatrix.set(Matrix4Row.R1, Matrix4Col.C3, newTY);
+        translateMatrix.set(Matrix4Row.R2, Matrix4Col.C3, newTZ);
+    }
+
+    public void translateRelative(float dTX, float dTY, float dTZ) {
+        translate(
+                translateMatrix.get(Matrix4Row.R0, Matrix4Col.C3) + dTX,
+                translateMatrix.get(Matrix4Row.R1, Matrix4Col.C3) + dTY,
+                translateMatrix.get(Matrix4Row.R2, Matrix4Col.C3) + dTZ);
+    }
+
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Translator that = (Translator) o;
         return Objects.equals(translateMatrix, that.translateMatrix);
     }
@@ -53,4 +71,3 @@ public class Translator implements AffineTransformation {
         return Objects.hash(translateMatrix);
     }
 }
-

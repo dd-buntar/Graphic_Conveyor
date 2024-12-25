@@ -1,7 +1,11 @@
 package ru.vsu.cs.konygina_d.render_engine;
 
 import io.github.alphameo.linear_algebra.mat.Mat4;
+import io.github.alphameo.linear_algebra.mat.Mat4Math;
 import io.github.alphameo.linear_algebra.mat.Matrix4;
+import io.github.alphameo.linear_algebra.mat.Matrix4Col;
+import io.github.alphameo.linear_algebra.mat.Matrix4Row;
+
 import static io.github.alphameo.linear_algebra.mat.Matrix4Col.*;
 import static io.github.alphameo.linear_algebra.mat.Matrix4Row.*;
 import io.github.alphameo.linear_algebra.vec.Vec3;
@@ -20,11 +24,7 @@ public class Scaling implements AffineTransformation {
     }
 
     public Scaling() {
-        this.scaleMatrix = new Mat4(
-                1, 0, 0, 0,
-                0, 1, 0, 0,
-                0, 0, 1, 0,
-                0, 0, 0, 1);
+        this.scaleMatrix = Mat4Math.unitMat();
     }
 
     @Override
@@ -40,10 +40,25 @@ public class Scaling implements AffineTransformation {
                 scaleMatrix.get(R2, C2) * v.z());
     }
 
+    public void set(float newSX, float newSY, float newSZ) {
+        scaleMatrix.set(Matrix4Row.R0, Matrix4Col.C0, newSX);
+        scaleMatrix.set(Matrix4Row.R1, Matrix4Col.C1, newSY);
+        scaleMatrix.set(Matrix4Row.R2, Matrix4Col.C2, newSZ);
+    }
+
+    public void setRelative(float dTX, float dTY, float dTZ) {
+        set(
+                scaleMatrix.get(Matrix4Row.R0, Matrix4Col.C0) * dTX,
+                scaleMatrix.get(Matrix4Row.R1, Matrix4Col.C1) * dTY,
+                scaleMatrix.get(Matrix4Row.R2, Matrix4Col.C2) * dTZ);
+    }
+
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Scaling scaling = (Scaling) o;
         return Objects.equals(scaleMatrix, scaling.scaleMatrix);
     }
