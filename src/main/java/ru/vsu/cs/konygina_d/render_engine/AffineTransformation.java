@@ -1,6 +1,5 @@
 package ru.vsu.cs.konygina_d.render_engine;
 
-import io.github.alphameo.linear_algebra.mat.Mat4;
 import io.github.alphameo.linear_algebra.mat.Mat4Math;
 import io.github.alphameo.linear_algebra.mat.Matrix4;
 import io.github.alphameo.linear_algebra.vec.Vec3;
@@ -30,8 +29,4 @@ public interface AffineTransformation {
 
         return resV;
     }
-
-    /*default Iterable<Vector3> tra(Iterable<Vector3> d) {
-
-    }*/
 }
