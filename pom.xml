@@ -62,7 +62,8 @@
                         </manifest>
                     </archive>
                     <includes>
-                        <include>src/main/ru/vsu/cs/konygina_d/affine/*</include>
+                        <include>**/affine/*</include>
+                        <include>**/module-info*</include>
                     </includes>
                 </configuration>
             </plugin>
