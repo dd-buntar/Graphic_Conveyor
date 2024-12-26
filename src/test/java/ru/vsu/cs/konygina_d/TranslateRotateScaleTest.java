@@ -5,7 +5,7 @@ import io.github.alphameo.linear_algebra.vec.Vec3Math;
 import io.github.alphameo.linear_algebra.vec.Vector3;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.vsu.cs.konygina_d.render_engine.*;
+import ru.vsu.cs.konygina_d.affine.*;
 
 public class TranslateRotateScaleTest {
     @Test
