@@ -1,190 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="Interface" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2pKcrU45ii8PZGupow9u4Vaw9FC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.AppTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Graphic_Conveyor&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Graphic_Conveyor\src\main\java\ru\vsu\cs\konygina_d" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.AppTest">
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graphic_Conveyor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
-      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.AppTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.testApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graphic_Conveyor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
-      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.AppTest" />
-      <option name="METHOD_NAME" value="testApp" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MatrixTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graphic_Conveyor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
-      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.MatrixTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TranslateRotateScaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graphic_Conveyor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
-      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.TranslateRotateScaleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TranslateRotateScaleTest.testTranslate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graphic_Conveyor" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.vsu.cs.konygina_d.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d" />
-      <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.TranslateRotateScaleTest" />
-      <option name="METHOD_NAME" value="testTranslate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.testApp" />
-        <item itemvalue="JUnit.TranslateRotateScaleTest" />
-        <item itemvalue="JUnit.TranslateRotateScaleTest.testTranslate" />
-        <item itemvalue="JUnit.MatrixTest" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment="" />
-      <created>1732518408994</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1732518408994</updated>
-    </task>
-    <servers />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.obj" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/vsu/cs/konygina_d/AppTest.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
+    <component name="AutoImportSettings">
+        <option name="autoReloadType" value="SELECTIVE"/>
+    </component>
+    <component name="ChangeListManager">
+        <list default="true" id="0f02a9fc-ec07-47d0-823a-978acebdd507" name="Changes" comment=""/>
+        <option name="SHOW_DIALOG" value="false"/>
+        <option name="HIGHLIGHT_CONFLICTS" value="true"/>
+        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false"/>
+        <option name="LAST_RESOLUTION" value="IGNORE"/>
+    </component>
+    <component name="FileTemplateManagerImpl">
+        <option name="RECENT_TEMPLATES">
+            <list>
+                <option value="Class"/>
+                <option value="Interface"/>
+            </list>
+        </option>
+    </component>
+    <component name="Git.Settings">
+        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$"/>
+    </component>
+    <component name="ProjectColorInfo">{
+        &quot;associatedIndex&quot;: 1
+        }
+    </component>
+    <component name="ProjectId" id="2pKcrU45ii8PZGupow9u4Vaw9FC"/>
+    <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+        <ConfirmationsSetting value="2" id="Add"/>
+    </component>
+    <component name="ProjectViewState">
+        <option name="hideEmptyMiddlePackages" value="true"/>
+        <option name="showLibraryContents" value="true"/>
+    </component>
+    <component name="PropertiesComponent">{
+        &quot;keyToString&quot;: {
+        &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+        &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+        &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+        &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+        &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+        &quot;jdk.selected.JAVA_MODULE&quot;: &quot;20&quot;,
+        &quot;last_opened_file_path&quot;: &quot;D:/Graphic_Conveyor&quot;,
+        &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+        &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+        &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+        &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+        &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+        }
+        }
+    </component>
+    <component name="RecentsManager">
+        <key name="CopyFile.RECENT_KEYS">
+            <recent name="D:\Graphic_Conveyor\src\main\java\ru\vsu\cs\konygina_d"/>
+        </key>
+    </component>
+    <component name="RunManager" selected="JUnit.AppTest.testApp">
+        <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+            <module name="Graphic_Conveyor"/>
+            <extension name="coverage">
+                <pattern>
+                    <option name="PATTERN" value="ru.vsu.cs.konygina_d.*"/>
+                    <option name="ENABLED" value="true"/>
+                </pattern>
+            </extension>
+            <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d"/>
+            <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.AppTest"/>
+            <option name="TEST_OBJECT" value="class"/>
+            <method v="2">
+                <option name="Make" enabled="true"/>
+            </method>
+        </configuration>
+        <configuration name="AppTest.testApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+            <module name="Graphic_Conveyor"/>
+            <extension name="coverage">
+                <pattern>
+                    <option name="PATTERN" value="ru.vsu.cs.konygina_d.*"/>
+                    <option name="ENABLED" value="true"/>
+                </pattern>
+            </extension>
+            <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d"/>
+            <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.AppTest"/>
+            <option name="METHOD_NAME" value="testApp"/>
+            <option name="TEST_OBJECT" value="method"/>
+            <method v="2">
+                <option name="Make" enabled="true"/>
+            </method>
+        </configuration>
+        <configuration name="MatrixTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+            <module name="Graphic_Conveyor"/>
+            <extension name="coverage">
+                <pattern>
+                    <option name="PATTERN" value="ru.vsu.cs.konygina_d.*"/>
+                    <option name="ENABLED" value="true"/>
+                </pattern>
+            </extension>
+            <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d"/>
+            <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.MatrixTest"/>
+            <option name="TEST_OBJECT" value="class"/>
+            <method v="2">
+                <option name="Make" enabled="true"/>
+            </method>
+        </configuration>
+        <configuration name="TranslateRotateScaleTest" type="JUnit" factoryName="JUnit" temporary="true"
+                       nameIsGenerated="true">
+            <module name="Graphic_Conveyor"/>
+            <extension name="coverage">
+                <pattern>
+                    <option name="PATTERN" value="ru.vsu.cs.konygina_d.*"/>
+                    <option name="ENABLED" value="true"/>
+                </pattern>
+            </extension>
+            <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d"/>
+            <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.TranslateRotateScaleTest"/>
+            <option name="TEST_OBJECT" value="class"/>
+            <method v="2">
+                <option name="Make" enabled="true"/>
+            </method>
+        </configuration>
+        <configuration name="TranslateRotateScaleTest.testTranslate" type="JUnit" factoryName="JUnit" temporary="true"
+                       nameIsGenerated="true">
+            <module name="Graphic_Conveyor"/>
+            <extension name="coverage">
+                <pattern>
+                    <option name="PATTERN" value="ru.vsu.cs.konygina_d.*"/>
+                    <option name="ENABLED" value="true"/>
+                </pattern>
+            </extension>
+            <option name="PACKAGE_NAME" value="ru.vsu.cs.konygina_d"/>
+            <option name="MAIN_CLASS_NAME" value="ru.vsu.cs.konygina_d.TranslateRotateScaleTest"/>
+            <option name="METHOD_NAME" value="testTranslate"/>
+            <option name="TEST_OBJECT" value="method"/>
+            <method v="2">
+                <option name="Make" enabled="true"/>
+            </method>
+        </configuration>
+        <recent_temporary>
+            <list>
+                <item itemvalue="JUnit.AppTest.testApp"/>
+                <item itemvalue="JUnit.TranslateRotateScaleTest"/>
+                <item itemvalue="JUnit.TranslateRotateScaleTest.testTranslate"/>
+                <item itemvalue="JUnit.MatrixTest"/>
+                <item itemvalue="JUnit.AppTest"/>
+            </list>
+        </recent_temporary>
+    </component>
+    <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0"
+               DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true"/>
+    <component name="TaskManager">
+        <task active="true" id="Default" summary="Default task">
+            <changelist id="8c284505-03ec-4dfc-b109-718bbcf3300f" name="Changes" comment=""/>
+            <created>1732518408994</created>
+            <option name="number" value="Default"/>
+            <option name="presentableId" value="Default"/>
+            <updated>1732518408994</updated>
+        </task>
+        <servers/>
+    </component>
+    <component name="UnknownFeatures">
+        <option featureType="com.intellij.fileTypeFactory" implementationName="*.obj"/>
+    </component>
+    <component name="Vcs.Log.Tabs.Properties">
+        <option name="TAB_STATES">
+            <map>
+                <entry key="MAIN">
+                    <value>
+                        <State/>
+                    </value>
+                </entry>
+            </map>
+        </option>
+    </component>
+    <component name="VcsManagerConfiguration">
+        <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true"/>
+    </component>
 </project>

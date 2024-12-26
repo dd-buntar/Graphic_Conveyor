@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import ru.vsu.cs.konygina_d.model.Model;
 import ru.vsu.cs.konygina_d.obj_reader.ObjReader;
 import ru.vsu.cs.konygina_d.obj_writer.ObjWriter;
-import ru.vsu.cs.konygina_d.render_engine.*;
+import ru.vsu.cs.konygina_d.affine.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
