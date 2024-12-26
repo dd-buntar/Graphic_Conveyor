@@ -1,4 +1,4 @@
-package ru.vsu.cs.konygina_d.render_engine;
+package ru.vsu.cs.konygina_d.affine;
 
 import io.github.alphameo.linear_algebra.mat.Mat4;
 import io.github.alphameo.linear_algebra.mat.Matrix4;
@@ -7,8 +7,10 @@ import io.github.alphameo.linear_algebra.mat.Matrix4Row;
 
 import static io.github.alphameo.linear_algebra.mat.Matrix4Col.*;
 import static io.github.alphameo.linear_algebra.mat.Matrix4Row.*;
+
 import io.github.alphameo.linear_algebra.vec.Vec3;
 import io.github.alphameo.linear_algebra.vec.Vector3;
+
 import java.util.Objects;
 
 public class Translator implements AffineTransformation {

@@ -5,7 +5,8 @@ import io.github.alphameo.linear_algebra.mat.Mat4Math;
 import io.github.alphameo.linear_algebra.mat.Matrix4;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.vsu.cs.konygina_d.render_engine.*;
+import ru.vsu.cs.konygina_d.affine.*;
+
 public class MatrixTest {
 
     @Test

@@ -1,8 +1,9 @@
-package ru.vsu.cs.konygina_d.render_engine;
+package ru.vsu.cs.konygina_d.affine;
 
 import io.github.alphameo.linear_algebra.mat.Mat4;
 import io.github.alphameo.linear_algebra.mat.Mat4Math;
 import io.github.alphameo.linear_algebra.mat.Matrix4;
+
 import java.util.Objects;
 
 public class Rotator implements AffineTransformation {
