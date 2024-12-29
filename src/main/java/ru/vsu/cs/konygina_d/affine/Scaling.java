@@ -42,17 +42,29 @@ public class Scaling implements AffineTransformation {
                 scaleMatrix.get(R2, C2) * v.z());
     }
 
-    public void set(float newSX, float newSY, float newSZ) {
-        scaleMatrix.set(Matrix4Row.R0, Matrix4Col.C0, newSX);
-        scaleMatrix.set(Matrix4Row.R1, Matrix4Col.C1, newSY);
-        scaleMatrix.set(Matrix4Row.R2, Matrix4Col.C2, newSZ);
+    public void setX(float sx) {
+        scaleMatrix.set(Matrix4Row.R0, Matrix4Col.C0, sx);
     }
 
-    public void setRelative(float dTX, float dTY, float dTZ) {
+    public void setY(float sy) {
+        scaleMatrix.set(Matrix4Row.R1, Matrix4Col.C1, sy);
+    }
+
+    public void setZ(float sz) {
+        scaleMatrix.set(Matrix4Row.R2, Matrix4Col.C2, sz);
+    }
+
+    public void set(float sx, float sy, float sz) {
+        setX(sx);
+        setY(sy);
+        setZ(sz);
+    }
+
+    public void setRelative(float multSX, float multSY, float multSZ) {
         set(
-                scaleMatrix.get(Matrix4Row.R0, Matrix4Col.C0) * dTX,
-                scaleMatrix.get(Matrix4Row.R1, Matrix4Col.C1) * dTY,
-                scaleMatrix.get(Matrix4Row.R2, Matrix4Col.C2) * dTZ);
+                scaleMatrix.get(Matrix4Row.R0, Matrix4Col.C0) * multSX,
+                scaleMatrix.get(Matrix4Row.R1, Matrix4Col.C1) * multSY,
+                scaleMatrix.get(Matrix4Row.R2, Matrix4Col.C2) * multSZ);
     }
 
     @Override
