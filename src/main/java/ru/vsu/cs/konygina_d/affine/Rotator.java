@@ -72,11 +72,11 @@ public class Rotator implements AffineTransformation {
         this.angle = (float) Math.toRadians(deg);
     }
 
-    public void setRelative(float dRad) {
+    public void setRelativeAngle(float dRad) {
         this.angle += dRad;
     }
 
-    public void setRelative(int dDeg) {
+    public void setRelativeAngle(int dDeg) {
         this.angle += (float) Math.toRadians(dDeg);
     }
 
