@@ -1,6 +1,7 @@
 package ru.vsu.cs.konygina_d.affine;
 
 import io.github.alphameo.linear_algebra.mat.Mat4;
+import io.github.alphameo.linear_algebra.mat.Mat4Math;
 import io.github.alphameo.linear_algebra.mat.Matrix4;
 import io.github.alphameo.linear_algebra.mat.Matrix4Col;
 import io.github.alphameo.linear_algebra.mat.Matrix4Row;
@@ -25,11 +26,7 @@ public class Translator implements AffineTransformation {
     }
 
     public Translator() {
-        this.translateMatrix = new Mat4(
-                1, 0, 0, 0,
-                0, 1, 0, 0,
-                0, 0, 1, 0,
-                0, 0, 0, 1);
+        this.translateMatrix = Mat4Math.unitMat();
     }
 
     @Override
@@ -45,17 +42,29 @@ public class Translator implements AffineTransformation {
                 translateMatrix.get(R2, C3) + v.z());
     }
 
-    public void set(float newTX, float newTY, float newTZ) {
-        translateMatrix.set(Matrix4Row.R0, Matrix4Col.C3, newTX);
-        translateMatrix.set(Matrix4Row.R1, Matrix4Col.C3, newTY);
-        translateMatrix.set(Matrix4Row.R2, Matrix4Col.C3, newTZ);
+    public void setX(float tx) {
+        translateMatrix.set(Matrix4Row.R0, Matrix4Col.C3, tx);
     }
 
-    public void setRelative(float dTX, float dTY, float dTZ) {
+    public void setY(float ty) {
+        translateMatrix.set(Matrix4Row.R1, Matrix4Col.C3, ty);
+    }
+
+    public void setZ(float tz) {
+        translateMatrix.set(Matrix4Row.R2, Matrix4Col.C3, tz);
+    }
+
+    public void set(float tx, float ty, float tz) {
+        setX(tx);
+        setY(ty);
+        setZ(tz);
+    }
+
+    public void setRelative(float dtx, float dty, float dtz) {
         set(
-                translateMatrix.get(Matrix4Row.R0, Matrix4Col.C3) + dTX,
-                translateMatrix.get(Matrix4Row.R1, Matrix4Col.C3) + dTY,
-                translateMatrix.get(Matrix4Row.R2, Matrix4Col.C3) + dTZ);
+                translateMatrix.get(Matrix4Row.R0, Matrix4Col.C3) + dtx,
+                translateMatrix.get(Matrix4Row.R1, Matrix4Col.C3) + dty,
+                translateMatrix.get(Matrix4Row.R2, Matrix4Col.C3) + dtz);
     }
 
     @Override
